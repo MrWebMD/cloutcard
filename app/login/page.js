@@ -10,7 +10,14 @@ export default function Login() {
     <>
       <Head>
         <meta content="CloutCard | Login" property="og:title" />
-        <meta name="description" content="Sign in to your account"></meta>
+        <meta name="description" content="Sign in to your account" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          content="https://cloutcard.io/pexels-nicholas-derio-palacios-19556998.jpg"
+          property="og:image"
+        />
+        <meta property="og:site_name" content="CloutCard" />
+        <title>CloutCard | Login</title>
       </Head>
       <main className="boundary formPage">
         <div className="w-full">

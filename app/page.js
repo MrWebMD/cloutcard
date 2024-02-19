@@ -24,7 +24,14 @@ export default function Home() {
         <meta
           name="description"
           content="Free Link-in-bio services tailored for musicians, artists, and gamers."
-        ></meta>
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          content="https://cloutcard.io/pexels-nicholas-derio-palacios-19556998.jpg"
+          property="og:image"
+        />
+        <meta property="og:site_name" content="CloutCard" />
+        <title>CloutCard</title>
       </Head>
       <header className="header boundary grid grid-cols-2 gap-4">
         <div className="twoColGrid__item">
