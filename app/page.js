@@ -5,6 +5,8 @@ import { Button } from "@nextui-org/react";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 import { FaChartBar, FaGithub, FaLink, FaPencilAlt } from "react-icons/fa";
 import Link from "next/link";
+import { Spacer } from "@nextui-org/react";
+
 import {
   Card,
   CardHeader,
@@ -18,25 +20,23 @@ export default function Home() {
     <>
       <header className="header boundary grid grid-cols-2 gap-4">
         <div className="twoColGrid__item">
-          <br />
-          <br />
+          <Spacer y={4} />
+
           <h1 className="text-5xl font-extrabold dark:text-white">
             <span style={{ color: "#66AAF9" }}>Amplify</span> Your Online
             Presence
           </h1>
-          <br />
+          <Spacer y={4} />
           <h4 className="text-2xl font-bold dark:text-white">
             Free Link-in-bio services tailored for musicians, artists, and
             gamers.
           </h4>
-          <br />
+          <Spacer y={4} />
           <Button
             color="primary"
             variant="solid"
             size="lg"
             className="header__ctaButton"
-            displayRipple={true}
-            displayAnimation={true}
             endContent={<HiOutlineChevronDoubleRight />}
             as={Link}
             href="/register"
@@ -55,12 +55,12 @@ export default function Home() {
             src="milad-fakurian-seA-FPPXL-M-unsplash.jpg"
           />
         </div>
-        <br />
+        <Spacer y={4} />
 
         <h3 className="text-3xl font-bold dark:text-white">
           Empowering creators everywhere with a rich set of features
         </h3>
-        <br />
+        <Spacer y={4} />
         <Divider />
         <br />
         <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 ">
@@ -89,7 +89,7 @@ export default function Home() {
             </CardHeader>
             <CardBody>
               <Divider />
-              <br />
+              <Spacer y={4} />
               <p>
                 Create and share up to 5 free landing pages at no cost. Perfect
                 for individuals and creators.
@@ -105,31 +105,28 @@ export default function Home() {
             </CardHeader>
             <CardBody>
               <Divider />
-              <br />
+              <Spacer y={4} />
               <p>Explore how your audience interacts with your links.</p>
             </CardBody>
           </Card>
         </div>
-        <br />
+        <Spacer y={4} />
         <Button
           color="primary"
           variant="solid"
           size="lg"
           className="ctaButton"
-          displayRipple={true}
-          displayAnimation={true}
           endContent={<HiOutlineChevronDoubleRight />}
           as={Link}
           href="/register"
         >
           Start now
         </Button>
-        <br />
-        <br />
+        <Spacer y={4} />
         <h3 className="text-3xl font-bold dark:text-white text-center">
           Connect with the brands you care about
         </h3>
-        <br />
+        <Spacer y={4} />
         <Divider />
         <Marquee>
           <div className="brandLogo">
@@ -160,25 +157,22 @@ export default function Home() {
             <img className="brandLogo__image" src="/dribbble.svg" />
           </div>
         </Marquee>
-        <br />
-        <br />
+        <Spacer y={4} />
         <div className="grid grid-cols-2 gap-4">
           <div className="flex align-middle flex-col justify-center">
             <h3 className="text-3xl font-bold dark:text-white">
               By the way, we're Open-Source.
             </h3>
-            <br />
+            <Spacer y={4} />
             <p>
               You can learn how to clone this application yourself on github.
             </p>
-            <br />
+            <Spacer y={4} />
             <Button
               color="primary"
               variant="solid"
               size="lg"
               className="ctaButton"
-              displayRipple={true}
-              displayAnimation={true}
               endContent={<FaGithub />}
               as={Link}
               href="https://github.com/MrWebMD/cloutcard"
@@ -202,7 +196,7 @@ export default function Home() {
           </div>
         </div>
 
-        <br />
+        <Spacer y={4} />
       </main>
     </>
   );

@@ -12,7 +12,7 @@ export const Navigation = () => {
   return (
     <Navbar maxWidth="xl">
       <NavbarBrand>
-        <h5 class="text-xl font-bold dark:text-white">
+        <h5 className="text-xl font-bold dark:text-white">
           <Link href="/">CloutCard</Link>
         </h5>
       </NavbarBrand>

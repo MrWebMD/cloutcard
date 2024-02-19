@@ -1,24 +1,8 @@
-import Image from "next/image";
-import classNames from "classnames";
-import { HeroSlider } from "@/components/HeroSlider";
 import { Button, Input } from "@nextui-org/react";
-import { HiOutlineChevronDoubleRight } from "react-icons/hi";
-import {
-  FaChartBar,
-  FaGithub,
-  FaLink,
-  FaPencilAlt,
-  FaUser,
-} from "react-icons/fa";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Divider,
-} from "@nextui-org/react";
-import Marquee from "react-fast-marquee";
+import { FaUser } from "react-icons/fa";
+import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 import Link from "next/link";
+import { Spacer } from "@nextui-org/react";
 
 export const metadata = {
   title: "CloutCard - Login",
@@ -29,9 +13,10 @@ export default function Home() {
   return (
     <>
       <main className="boundary formPage">
-        <div>
+        <div className="w-full">
+          <Spacer y={4} />
           <h1 className="text-5xl font-bold text-center">CloutCard</h1>
-          <br />
+          <Spacer y={4} />
           <Card isBlurred={false} className="loginForm">
             <CardHeader>
               <h4 className="text-2xl font-bold dark:text-white flex flex-row items-center gap-2 justify-center w-full">
@@ -41,31 +26,29 @@ export default function Home() {
             </CardHeader>
             <CardBody>
               <Divider />
-              <br />
+              <Spacer y={4} />
               <Input
                 type="email"
                 label="Email"
                 placeholder="Enter your email"
               />
-              <br />
+              <Spacer y={4} />
               <Input
                 type="password"
                 label="Password"
                 placeholder="Enter your password"
               />
-              <br />
+              <Spacer y={4} />
               <Button
                 color="primary"
                 variant="solid"
                 size="lg"
                 className="header__ctaButton"
-                displayRipple={true}
-                displayAnimation={true}
                 startContent={<FaUser />}
               >
                 Login
               </Button>
-              <br />
+              <Spacer y={4} />
               <p className="text-center underline underline-offset-4">
                 <Link href="/register">Don't have an account? Register.</Link>
               </p>

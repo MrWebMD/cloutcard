@@ -106,7 +106,7 @@ html {
 
 .banner {
   overflow: hidden;
-  height: 100px;
+  height: 50px;
   border-radius: 20px;
 }
 .banner__image {
@@ -123,8 +123,8 @@ html {
   justify-content: center;
 }
 .loginForm {
-  width: 500px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -132,6 +132,9 @@ html {
   .header {
     display: block;
     min-height: 750px;
+  }
+  .boundary {
+    display: block;
   }
   .ctaButton {
     width: 100%;

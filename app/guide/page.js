@@ -1,28 +1,6 @@
-import Image from "next/image";
-import classNames from "classnames";
-import { HeroSlider } from "@/components/HeroSlider";
-import { Button, Input } from "@nextui-org/react";
-import { HiOutlineChevronDoubleRight } from "react-icons/hi";
-import {
-  FaChartBar,
-  FaGithub,
-  FaLink,
-  FaPencilAlt,
-  FaUser,
-} from "react-icons/fa";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Divider,
-} from "@nextui-org/react";
-import Marquee from "react-fast-marquee";
-import Link from "next/link";
-
 export const metadata = {
-  title: "CloutCard - Register",
-  description: "Create an account",
+  title: "CloutCard - Tutorial",
+  description: "Learn how to use CloutCard",
 };
 
 export default function Home() {
