@@ -29,6 +29,9 @@ export const Navigation = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
+          <Link href="/report">Report</Link>
+        </NavbarItem>
+        <NavbarItem className="hidden lg:flex">
           <Link href="/guide">Guide</Link>
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">

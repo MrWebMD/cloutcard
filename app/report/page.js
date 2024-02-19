@@ -1,5 +1,5 @@
 import { Button, Input } from "@nextui-org/react";
-import { FaUser } from "react-icons/fa";
+import { FaExclamationTriangle, FaPencilAlt, FaUser } from "react-icons/fa";
 import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 import Link from "next/link";
 import { Spacer } from "@nextui-org/react";
@@ -9,7 +9,7 @@ export const metadata = {
   description: "Sign in to your account",
 };
 
-export default function Login() {
+export default function Report() {
   return (
     <>
       <main className="boundary formPage">
@@ -20,24 +20,20 @@ export default function Login() {
           <Card isBlurred={false} className="loginForm">
             <CardHeader>
               <h4 className="text-2xl font-bold dark:text-white flex flex-row items-center gap-2 justify-center w-full">
-                <FaUser />
-                Login
+                <FaExclamationTriangle />
+                Report
               </h4>
             </CardHeader>
             <CardBody>
               <Divider />
               <Spacer y={4} />
-              <Input
-                type="email"
-                label="Email"
-                placeholder="Enter your email"
-                autoFocus
-              />
+              <p>Please enter the link of the offending page</p>
               <Spacer y={4} />
               <Input
-                type="password"
-                label="Password"
-                placeholder="Enter your password"
+                type="text"
+                label="Page URL"
+                placeholder="https://cloutcard.io/u/username"
+                autoFocus
               />
               <Spacer y={4} />
               <Button
@@ -45,14 +41,11 @@ export default function Login() {
                 variant="solid"
                 size="lg"
                 className="header__ctaButton"
-                startContent={<FaUser />}
+                startContent={<FaPencilAlt />}
               >
-                Login
+                Submit Report
               </Button>
               <Spacer y={4} />
-              <p className="text-center underline underline-offset-4">
-                <Link href="/register">Don't have an account? Register.</Link>
-              </p>
             </CardBody>
           </Card>
         </div>

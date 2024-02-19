@@ -9,7 +9,7 @@ export const metadata = {
   description: "Create an account",
 };
 
-export default function Home() {
+export default function Register() {
   return (
     <>
       <main className="boundary formPage">
@@ -31,6 +31,7 @@ export default function Home() {
                 type="email"
                 label="Email"
                 placeholder="Enter your email"
+                autoFocus
               />
               <Spacer y={4} />
               <Input
