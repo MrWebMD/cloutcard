@@ -53,6 +53,7 @@ export default function Home() {
           <img
             className="banner__image"
             src="milad-fakurian-seA-FPPXL-M-unsplash.jpg"
+            alt="A bright blue and dark blue gradient"
           />
         </div>
         <Spacer y={4} />
@@ -130,31 +131,63 @@ export default function Home() {
         <Divider />
         <Marquee>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/reddit.svg" />
+            <img
+              className="brandLogo__image"
+              src="/reddit.svg"
+              alt="Reddit logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/tiktok.svg" />
+            <img
+              className="brandLogo__image"
+              src="/tiktok.svg"
+              alt="Tiktok logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/tumblr.svg" />
+            <img
+              className="brandLogo__image"
+              src="/tumblr.svg"
+              alt="Tumblr logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/twitter.svg" />
+            <img
+              className="brandLogo__image"
+              src="/twitter.svg"
+              alt="Twitter logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/youtube.svg" />
+            <img
+              className="brandLogo__image"
+              src="/youtube.svg"
+              alt="Youtube logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/instagram.svg" />
+            <img
+              className="brandLogo__image"
+              src="/instagram.svg"
+              alt="Instagram logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/twitch.svg" />
+            <img
+              className="brandLogo__image"
+              src="/twitch.svg"
+              alt="Twitch logo"
+            />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/meta.svg" />
+            <img className="brandLogo__image" src="/meta.svg" alt="Meta logo" />
           </div>
           <div className="brandLogo">
-            <img className="brandLogo__image" src="/dribbble.svg" />
+            <img
+              className="brandLogo__image"
+              src="/dribbble.svg"
+              alt="Dribbble logo"
+            />
           </div>
         </Marquee>
         <Spacer y={4} />
@@ -191,6 +224,7 @@ export default function Home() {
               <img
                 className="imageFrame__image"
                 src="pankaj-patel-_SgRNwAVNKw-unsplash.jpg"
+                alt="Javascript code displayed on a laptop screen"
               />
             </div>
           </div>

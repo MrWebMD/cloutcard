@@ -41,6 +41,7 @@ export const HeroSlider = (props) => {
           <img
             className="heroSlider__image"
             src="/pexels-nicholas-derio-palacios-19556998.jpg"
+            alt="Femal DJ wearing sunglasses at a concert"
           />
         </div>
       </SwiperSlide>
@@ -54,6 +55,7 @@ export const HeroSlider = (props) => {
           <img
             className="heroSlider__image"
             src="/florian-olivo-Mf23RF8xArY-unsplash.jpg"
+            alt="A gamer using a computer for a competition in e-sports"
           />
         </div>
       </SwiperSlide>
@@ -67,6 +69,7 @@ export const HeroSlider = (props) => {
           <img
             className="heroSlider__image"
             src="/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+            alt="A perform sings into a microphone on a stage"
           />
         </div>
       </SwiperSlide>
