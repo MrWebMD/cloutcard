@@ -4,6 +4,7 @@ import { HeroSlider } from "@/components/HeroSlider";
 import { Button } from "@nextui-org/react";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 import { FaChartBar, FaGithub, FaLink, FaPencilAlt } from "react-icons/fa";
+import Link from "next/link";
 import {
   Card,
   CardHeader,
@@ -37,6 +38,8 @@ export default function Home() {
             displayRipple={true}
             displayAnimation={true}
             endContent={<HiOutlineChevronDoubleRight />}
+            as={Link}
+            href="/register"
           >
             Get Started for Free
           </Button>
@@ -46,7 +49,7 @@ export default function Home() {
         </div>
       </header>
       <main className="boundary">
-        <div class="banner">
+        <div className="banner">
           <img
             className="banner__image"
             src="milad-fakurian-seA-FPPXL-M-unsplash.jpg"
@@ -54,7 +57,7 @@ export default function Home() {
         </div>
         <br />
 
-        <h3 class="text-3xl font-bold dark:text-white">
+        <h3 className="text-3xl font-bold dark:text-white">
           Empowering creators everywhere with a rich set of features
         </h3>
         <br />
@@ -63,7 +66,7 @@ export default function Home() {
         <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 ">
           <Card isBlurred={false}>
             <CardHeader>
-              <h4 class="text-2xl font-bold dark:text-white flex flex-row items-center gap-2">
+              <h4 className="text-2xl font-bold dark:text-white flex flex-row items-center gap-2">
                 <FaPencilAlt />
                 Landing Page Designer
               </h4>
@@ -79,7 +82,7 @@ export default function Home() {
           </Card>
           <Card isBlurred={false}>
             <CardHeader>
-              <h4 class="text-2xl font-bold dark:text-white flex flex-row items-center gap-2">
+              <h4 className="text-2xl font-bold dark:text-white flex flex-row items-center gap-2">
                 <FaLink />
                 Up to 5 free links
               </h4>
@@ -95,7 +98,7 @@ export default function Home() {
           </Card>
           <Card isBlurred={false}>
             <CardHeader>
-              <h4 class="text-2xl font-bold dark:text-white flex flex-row items-center gap-2">
+              <h4 className="text-2xl font-bold dark:text-white flex flex-row items-center gap-2">
                 <FaChartBar />
                 Real Time Analytics
               </h4>
@@ -116,50 +119,52 @@ export default function Home() {
           displayRipple={true}
           displayAnimation={true}
           endContent={<HiOutlineChevronDoubleRight />}
+          as={Link}
+          href="/register"
         >
           Start now
         </Button>
         <br />
         <br />
-        <h3 class="text-3xl font-bold dark:text-white text-center">
+        <h3 className="text-3xl font-bold dark:text-white text-center">
           Connect with the brands you care about
         </h3>
         <br />
         <Divider />
         <Marquee>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/reddit.svg" />
+            <img className="brandLogo__image" src="/reddit.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/tiktok.svg" />
+            <img className="brandLogo__image" src="/tiktok.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/tumblr.svg" />
+            <img className="brandLogo__image" src="/tumblr.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/twitter.svg" />
+            <img className="brandLogo__image" src="/twitter.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/youtube.svg" />
+            <img className="brandLogo__image" src="/youtube.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/instagram.svg" />
+            <img className="brandLogo__image" src="/instagram.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/twitch.svg" />
+            <img className="brandLogo__image" src="/twitch.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/meta.svg" />
+            <img className="brandLogo__image" src="/meta.svg" />
           </div>
           <div className="brandLogo">
-            <img class="brandLogo__image" src="/dribbble.svg" />
+            <img className="brandLogo__image" src="/dribbble.svg" />
           </div>
         </Marquee>
         <br />
         <br />
         <div className="grid grid-cols-2 gap-4">
           <div className="flex align-middle flex-col justify-center">
-            <h3 class="text-3xl font-bold dark:text-white">
+            <h3 className="text-3xl font-bold dark:text-white">
               By the way, we're Open-Source.
             </h3>
             <br />
@@ -175,6 +180,9 @@ export default function Home() {
               displayRipple={true}
               displayAnimation={true}
               endContent={<FaGithub />}
+              as={Link}
+              href="https://github.com/MrWebMD/cloutcard"
+              target="_blank"
             >
               Github
             </Button>
