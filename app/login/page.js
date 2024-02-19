@@ -3,15 +3,15 @@ import { FaUser } from "react-icons/fa";
 import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 import Link from "next/link";
 import { Spacer } from "@nextui-org/react";
-
-export const metadata = {
-  title: "CloutCard - Login",
-  description: "Sign in to your account",
-};
+import Head from "next/head";
 
 export default function Login() {
   return (
     <>
+      <Head>
+        <meta content="CloutCard | Login" property="og:title" />
+        <meta name="description" content="Sign in to your account"></meta>
+      </Head>
       <main className="boundary formPage">
         <div className="w-full">
           <Spacer y={4} />

@@ -3,15 +3,15 @@ import { Spacer } from "@nextui-org/react";
 import { FaUser } from "react-icons/fa";
 import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 import Link from "next/link";
-
-export const metadata = {
-  title: "CloutCard - Register",
-  description: "Create an account",
-};
+import Head from "next/head";
 
 export default function Register() {
   return (
     <>
+      <Head>
+        <meta content="CloutCard | Register" property="og:title" />
+        <meta name="description" content="Create an account"></meta>
+      </Head>
       <main className="boundary formPage">
         <div className="w-full">
           <Spacer y={4} />

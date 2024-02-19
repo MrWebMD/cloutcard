@@ -15,9 +15,17 @@ import {
   Divider,
 } from "@nextui-org/react";
 import Marquee from "react-fast-marquee";
+import Head from "next/head";
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta content="CloutCard | Home" property="og:title" />
+        <meta
+          name="description"
+          content="Free Link-in-bio services tailored for musicians, artists, and gamers."
+        ></meta>
+      </Head>
       <header className="header boundary grid grid-cols-2 gap-4">
         <div className="twoColGrid__item">
           <Spacer y={4} />
